@@ -87,34 +87,42 @@ namespace Vuforia
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
             SystemConfig.instance.GUI_AR.SetActive(false);
+            
 
             if (mTrackableBehaviour.TrackableName == "teratai")
             {
                 aSource.PlayOneShot(aClip);
+                InfoTeratai.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "sakura")
             {
                 aSource.PlayOneShot(aClip);
+                InfoSakura.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "matahari")
             {
                 aSource.PlayOneShot(aClip);
+                InfoMatahari.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "mawar")
             {
                 aSource.PlayOneShot(aClip);
+                InfoMawar.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "melati")
             {
                 aSource.PlayOneShot(aClip);
+                InfoMelati.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "lili")
             {
                 aSource.PlayOneShot(aClip);
+                InfoBakung.instance.TombolInfo.SetActive(true);
             }
             if (mTrackableBehaviour.TrackableName == "anggrek")
             {
                 aSource.PlayOneShot(aClip);
+                InfoAnggrek.instance.TombolInfo.SetActive(true);
             }
         }
 
@@ -143,30 +151,37 @@ namespace Vuforia
             if (mTrackableBehaviour.TrackableName == "teratai")
             {
                 aSource.Stop();
+                InfoTeratai.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "sakura")
             {
                 aSource.Stop();
+                InfoSakura.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "matahari")
             {
                 aSource.Stop();
+                InfoMatahari.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "mawar")
             {
                 aSource.Stop();
+                InfoMawar.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "melati")
             {
                 aSource.Stop();
+                InfoMelati.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "lili")
             {
                 aSource.Stop();
+                InfoBakung.instance.TombolInfo.SetActive(false);
             }
             if (mTrackableBehaviour.TrackableName == "anggrek")
             {
                 aSource.Stop();
+                InfoAnggrek.instance.TombolInfo.SetActive(false);
             }
         }
         
